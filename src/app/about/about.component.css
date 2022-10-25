@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
+.bacc{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.bacc:hover{
+  background-color: white;
+}
+p{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+
+}

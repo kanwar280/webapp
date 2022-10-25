@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap);
+
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.homepagediv{
+  width: 100vw;
+  height: 100vh;
+  align-self:center;
+  background: #2a2727;
+
+}
+sup{
+  font-size: medium;
+}
+.display-1{
+
+  height: auto;
+  align:left;
+  font-family: 'source code pro', monospace;
+  color: white;
+  margin-left: 2%;
+  text-align: justify;
+  text-justify: inter-character;
+  z-index: 1;
+  position: relative;
+}
+.header{
+  color: white;
+  height: 10em;
+
+}
+
+.paragraph{
+  font-family: 'Open Sans', sans-serif;
+
+  color:white;
+  text-align: justify;
+  text-justify: inter-word;
+  opacity: 0;
+  animation: slide-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.child-2{
+  position: absolute;
+  align-self:center;
+  right: 10%;
+  bottom: 5%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.parent{
+  display: flex;
+}
+
+.image1{
+  margin-left:35%;
+  margin-top: 5%;
+  z-index: 0;
+  width: auto;
+  height: 70vh;
+  max-width: 90vw;
+  opacity: 0;
+  animation: slide-in 5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: forwards;
+}
+.child{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  position: relative;
+  align-self: center;
+  top: 10%;
+  right: 45%;
+  opacity: 0%;
+  animation: slide-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+h1{
+  font-size: 2.5em;
+}
+
+.projectmain{
+  justify-content: center;
+}
+.parent-2{
+  margin: 15%;
+
+}
+.type{
+  font-family: 'Silkscreen', cursive;
+  color: white;
+  font-size: 10vw;
+  z-index: 0;
+}
+.list{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  height: 20vh;
+  width: 20vw;
+  font-size: 0.70em;
+  margin-top: 50%;
+}
+
+.img1{
+  height: 80vh;
+  width: auto;
+}
+a:hover{
+  background-color: white;
+}
+.footer-1{
+  z-index: 999;
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+}
+.video-container {
+    height: 220vh;
+    width: 90vw;
+}
+
+.video-container .video {
+  width: 100%;
+  height: 220%;
+  position: absolute;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+.video-container .caption {
+  z-index: 999;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  text-align: right;
+  color: white;
+  padding: 10px;
+}
+.emptyspace{
+  height: 20vh;
+}
+.smol-txt{
+  color: white;
+  z-index: 999;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  position: fixed;
+  top:20%;
+}
+.smol-txt-2{
+  color: white;
+  z-index: 999;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  position: fixed;
+  top:80%;
+}
+.menu-1{
+  color: white;
+  z-index: 999;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  position: fixed;
+  top:1%;
+  left:90%;
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .image1{
+    float: left;
+    margin-left:0;
+    margin-top: 60%;
+    z-index: 0;
+    width: auto;
+    height: 40vh;
+  }
+  .child{
+    color: white;
+    position: absolute;
+    align-self: center;
+    top:15%;
+    right: 10%;
+  }
+  .child-2{
+    position: absolute;
+    align-self:center;
+    left: 5%;
+    top: 60%;
+  }
+  .parent-2{
+    margin-top: 50%;
+  }
+  .list{
+    float: left;
+    height: 10vh;
+    width: 20vw;
+    font-size: 0.75em;
+    margin-top: 70%;
+  }
+  .img1{
+    width: 180%;
+    height: auto;
+  }
+  .menu-1{
+    color: white;
+    z-index: 999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: fixed;
+    top:12%;
+    left:78%;
+  }
+}

@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
+
+.header-text{
+  position: static;
+  color:white;
+  margin-left: 3%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  display: inline;
+}
+.header-text-2{
+  color:white;
+  margin-left: 50%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  display: inline;
+  position: absolute;
+}
+.header-text-3{
+  color:white;
+  margin-left: 60%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  display: inline;
+  position: absolute;
+}
+.header-text-3:hover{
+  background-color: white;
+}
+.header-text-2:hover{
+  background-color: white;
+}
+.logo{
+  margin-left: 1%;
+  margin: 10px;
+  float:left;
+  position:fixed;
+  width: 20px;
+  height: auto;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  50% {transform: rotate(360deg);}
+}
+@media only screen and (max-width: 600px) {
+  .header-text-2{
+    display: none;
+  }
+  .header-text-3{
+    display: none;
+  }
+  .header-text{
+    margin-left: 10%;
+  }
+  .logo{
+    position: sticky;
+  }
+}

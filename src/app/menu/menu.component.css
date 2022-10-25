@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap);
+
+.content{
+    background-color: transparent;
+    background-image:
+    linear-gradient(0deg, transparent 9%,
+            rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, .2) 12%, transparent 13%, transparent 29%,
+            rgba(255, 255, 255, .1) 30%, rgba(255, 255, 255, .1) 31%, transparent 32%, transparent 49%,
+            rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .1) 51%, transparent 52%, transparent 69%,
+            rgba(255, 255, 255, .1) 70%, rgba(255, 255, 255, .1) 71%, transparent 72%, transparent 89%,
+            rgba(255, 255, 255, .1) 90%, rgba(255, 255, 255, .1) 91%, transparent 92%, transparent),
+    linear-gradient(90deg, transparent 9%,
+            rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, .2) 12%, transparent 13%, transparent 29%,
+            rgba(255, 255, 255, .1) 30%, rgba(255, 255, 255, .1) 31%, transparent 32%, transparent 49%,
+            rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .1) 51%, transparent 52%, transparent 69%,
+            rgba(255, 255, 255, .1) 70%, rgba(255, 255, 255, .1) 71%, transparent 72%, transparent 89%,
+            rgba(255, 255, 255, .1) 90%, rgba(255, 255, 255, .1) 91%, transparent 92%, transparent);
+
+    height:100vh;
+  background-size:50px 50px;
+  opacity: 0%;
+  animation: slide-in 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+h1{
+  font-family: 'Silkscreen', cursive;
+  color:white;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  animation: slide-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+h1:hover{
+  background-color: white;
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px){
+  h1{
+    margin-bottom: 20%;
+  }
+}
