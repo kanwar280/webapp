@@ -1,17 +1,29 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap);
   body {
-  background: black;
+  background-color: transparent;
+  height: 100%;
 }
-
+.im1{
+  margin-top: -30%;
+  height: 100%;
+  width: 100vh;
+  object-fit: cover;
+}
+.main{
+  background-image: url("src/assets/landingpage-gifoptimized.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -5%;
+}
 .hidden {
   opacity:0;
 }
 .console-container {
-
+  background-color: transparent;
   font-family: 'Source Code Pro', monospace;
   font-size:1em;
   text-align:center;
-  height:100%;
   width:100%;
   display:block;
   position:relative;
