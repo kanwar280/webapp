@@ -7,12 +7,12 @@ phases:
       - echo "Installing dependencies...."
       - npm install
       - npm install -g @angular/cli@10.0.8
-    build:
-      commands:
-        - echo "building angular project...."
-        - ng build --configuration production --aot
-    post_build:  
-      commands:
+  build:
+    commands:
+      - echo "building angular project...."
+      - ng build --configuration production --aot
+  post_build:  
+    commands:
       - echo "updating files in s3 bucket..."
       - aws s3 sync dist/webapp s3://webapp2800 --delete
 
