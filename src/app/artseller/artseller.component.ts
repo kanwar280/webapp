@@ -22,6 +22,7 @@ export class ArtsellerComponent implements OnInit {
       const file = event.target.files[0];
       if(file.type == 'image/png' || file.type=="image/jpeg" || file.type=="image/jpg"){
         var reader = new FileReader();
+        this.data.body = "please wait till we get results back..."
 
         //reader.readAsBinaryString(file)
         reader.onloadend = () => {
