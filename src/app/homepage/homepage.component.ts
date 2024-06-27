@@ -15,6 +15,18 @@ export class HomepageComponent implements OnInit {
     clickme.style.display = "none";
     setTimeout(this.showStuff, 2000)
   }
+  artworks(){
+    this.route.navigate(['homepage-component']);
+  }
+  projects(){
+    this.route.navigate(['projects']);
+  }
+  about(){
+    this.route.navigate(['homepage-component']);
+  }
+  chat(){
+
+  }
   showStuff(){
     var clickme = document.getElementById("imageonlanding")!
     clickme.style.display = "inline";

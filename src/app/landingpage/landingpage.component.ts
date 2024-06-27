@@ -15,7 +15,7 @@ export class LandingpageComponent implements OnInit {
 
 
   ngOnInit(): void {
-    consoleText(['Kanwar portfolio'], 'text',['white']);
+    consoleText(['Welcome to Kanwar portfolio'], 'text',['white']);
     var clickme = document.getElementById("clickme")!
     clickme.style.display = "none";
     setTimeout(showStuff, 3000)

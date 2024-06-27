@@ -1,7 +1,8 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, NgModule, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { HttpClient} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { HttphandlerserviceService } from '../httphandlerservice.service';
 @Component({
   selector: 'app-artseller',
@@ -10,9 +11,30 @@ import { HttphandlerserviceService } from '../httphandlerservice.service';
 })
 export class ArtsellerComponent implements OnInit {
   data : any= []
+  userDetails = {
+    name: '',
+    email: '',
+    age: 10,
+  };
     
   constructor(private route: Router, private service:HttphandlerserviceService) {}
+  submitForm(form: any): void {
+    if (form.valid) {
+      console.log('Form data:', this.userDetails);
+    }
+  }
   ngOnInit(): void {
+  }
+  artworks(){
+    this.route.navigate(['homepage-component']);
+  }
+  projects(){
+    this.route.navigate(['projects']);
+  }
+  about(){
+    this.route.navigate(['homepage-component']);
+  }
+  chat(){
   }
   gobacc(){
     this.route.navigate(['homepage-component']);

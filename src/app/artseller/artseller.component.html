@@ -1,8 +1,74 @@
-<br><br><br><a class="aa" (click)="gobacc()">go bacc</a>
-<br><br><br><br><h1>Image rekognition:</h1>
+<div class="homepagediv">
+  
+  <div class="container">
+  
+    <div class="projectmain" id="projectmain">
+  
+      <div class="parent" >
+          <div class="child">
+            <ul>
+              <li (click)="about()"><span>/ABOUT</span></li>
+            <li class="selected" (click)="projects()"><span>/PROJECTS</span></li>
+            <li (click)="artworks()"><span>/ARTWORKS</span></li>
+            <li (click)="chat()"><span>/CHAT</span></li>
+          </ul>
+          </div>
+          
+      </div>
+      
+  
+  
+  
+  
+    </div>
+  
+    </div>
+  
+  </div>
+<div class="projectmain-1">
+<br><br><br><br><h1>IMAGE REKOGNITION:</h1>
 <p>upload an image to analyse with AWS image rekognition:</p>
 <div>
     <input type="file" (change)="onFileSelected($event)">
 </div>
 <h3>{{data.body}}</h3>
 <p>current language model being used is <i>Amazon Titan G1 - express</i></p>
+<p><i>Current services used: AWS Lambda for API calls to handle image as base64 and calling AWS Recognition from lambda. </i></p>
+<div class="rectangle_1"></div>
+    <div class="rectangle_2"></div>
+</div>
+
+
+
+<br><br><br><h1>E-Greeting card</h1>
+<p>send someone an E-greeting card:</p>
+<div class="container">
+    <form #userForm="ngForm" (ngSubmit)="submitForm(userForm)">
+   
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="userDetails.name" #name = "ngModel" required>
+        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
+          Name is required.
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="userDetails.email" #email = "ngModel" required email>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
+          Please enter a valid email address.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" id="age" name="age" [(ngModel)]="userDetails.age" #age = "ngModel" required min=10 max=70>
+        <div *ngIf="age.invalid || age.dirty" class="text-danger">
+          Please enter a valid age.
+        </div>
+      </div>
+  
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>

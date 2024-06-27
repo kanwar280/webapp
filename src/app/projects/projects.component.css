@@ -1,29 +1,19 @@
-@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
-.aa{
-  color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-p{
-  color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-h1{
-  color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-h3{
-  color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-h2{
-  color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-.container{
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@0,300..800;1,300..800&&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap);
 
-  color: white;
-    font-family: 'Open Sans', sans-serif;
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: linear-gradient(
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  );
+  background-size: 400% 400%;
+  animation: body 10s infinite ease-in-out;
 }
 
 
@@ -346,21 +336,11 @@ span{
   }
 
 }
-.projectmain-1{
-  position: absolute;
-  top:20%;
-  margin-left:10%;
-  width: 40vw;
-}
-.projectmain-1 h1{
-  font-size:3em;
-  font-family:"Onest", sans-serif;
-  font-weight: 900;
-}
+
 .rectangle_1{
   position: absolute;
   top:0%;
-  left: -10%;
+  left: 0%;
   height: 15px;
   width: 100px;
   border-radius: 10px;
@@ -381,7 +361,7 @@ span{
 .rectangle_2{
   position: absolute;
   top:0%;
-  margin-left:30%;
+  margin-left:20%;
   height: 15px;
   width: 80px;
   border-radius: 10px;
@@ -448,10 +428,14 @@ p {
 
 .project-item h3 {
   font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+
   margin-bottom: 10px;
 }
 
 .project-item p {
+  font-family: 'Open Sans', sans-serif;
+
   font-size: 1em;
   line-height: 1.5;
 }
@@ -469,3 +453,4 @@ p {
 .project-item a:hover {
   color: #333;
 }
+
