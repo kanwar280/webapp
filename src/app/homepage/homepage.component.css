@@ -79,7 +79,6 @@
 sup{
   font-size: medium;
 }
-
 .desc{
   position: absolute;
   font-family: 'Open Sans', sans-serif;
@@ -89,6 +88,28 @@ sup{
   top:45%;
   left: 10%;
   font-size: medium;
+  color: white;
+}
+.desc-2{
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  width: 40vw;
+  text-align: justify;
+  top:60%;
+  left: 10%;
+  font-size: large;
+  color: white;
+}
+.desc-3{
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  width: 40vw;
+  text-align: justify;
+  top:70%;
+  left: 10%;
+  font-size: large;
   color: white;
 }
 .display-1{
