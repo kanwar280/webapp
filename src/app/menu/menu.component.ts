@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
     this.route.navigate(['homepage-component']);
   }
   sell(){
-    this.route.navigate(['seller']);
+    this.route.navigate(['projects']);
   }
   about(){
     this.route.navigate(['about']);
